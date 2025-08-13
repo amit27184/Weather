@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli Chibi PWA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🌸 Kawaii Ghibli App</h1>
+      <button id="toggleFeature">⚙ Toggle Feature</button>
+    </header>
+
+    <main id="featureArea">
+      <!-- Dynamic content will appear here -->
+    </main>
+
+    <div class="chibi">
+      <img src="https://i.ibb.co/bRX9jJ3/chibi.png" alt="Chibi Character">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
